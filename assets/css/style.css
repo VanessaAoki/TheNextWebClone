@@ -1,0 +1,27 @@
+body {
+    width: 320px;
+}
+
+
+
+.container {
+    display: grid;
+    grid-template-columns:  repeat(auto-fit, minmax(280px, 1fr));
+
+}
+header {
+    display: grid;
+    justify-content: space-between;
+
+}
+nav > div {
+    display: flex;
+}
+
+.main-articles {
+
+}
+
+.main-article1{
+    height: 120px;
+}
