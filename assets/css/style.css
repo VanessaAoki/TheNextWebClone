@@ -1,4 +1,15 @@
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+
 body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+
+}
+.main {
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 a {
@@ -17,12 +28,21 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
+.left-side,
+.right-side {
+    display: inline-block;
+}
+
+.left-side {
+    width: fit-content;
+}
 .right-side > a {
  padding: 16px;
 }
 
 .left-side > a > img {
     height: 48px;
+    width: auto;
 }
 .banner {
     background-color: #FFDD33;
@@ -124,35 +144,57 @@ h2 > a {
     color: #aaaaaa;
 
 }
-
-.latest-funding1 {
-    display: grid;
-    grid-template-columns: 60px 1fr ;
-    grid-template-rows: 40px 60px 82px 63px;
-}
-
 .latest-funding-header > h4 > a{
     color: #ff4422;
     font-weight: bolder;
 }
 
-.latest-funding1 > img {
-    width: auto;
-    height: 50px;
+.latest-funding1 {
+    display: grid;
+    grid-template-columns: 60px 1fr ;
+    grid-template-rows: 40px 60px 82px 63px;
+    margin: 10px;
+}
+
+.top {
+    color: #ff4422;
+    grid-column: 1/ span 2;
     grid-row: 1/1;
-    grid-column: 1/1;
-    align-items: center;
+}
+
+.latest-funding-title > h4 {
+    font-size: 20px;
+    color: black;
+    padding: 10px;
+}
+
+.latest-funding1 img {
+    float: left;
+    width: 50px;
+    height: 50px;
 
 }
-.latest-funding-title {
-    grid-column: 1/3;
+.latest-funding-title > h4 {
+    grid-column: 2/3;
     grid-row: 1/1;
-    display: flexbox;
+    background-color: #ff4422;
+    
+}
+.latest-funding-title {
+
 
 }
 
 .latest-funding-subtitle {
     grid-column: 1/3;
     grid-row: 2/2;
+    background-color: #FFF4F2;
 
 }
+.latest-funding-subtitle > h4,
+.latest-funding-subtitle > h5 {
+    color: black;
+    font-size: 13px;
+    padding: 10px;
+}
+
