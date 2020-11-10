@@ -9,13 +9,17 @@ body {
 }
 
 .main {
-  max-width: 1400px;
+  max-width: 100vw;
   margin: 0 auto;
 }
 
 a {
   color: black;
   text-decoration: none;
+}
+
+h2 {
+  padding-bottom: 25px;
 }
 
 h2 > a {
@@ -26,6 +30,10 @@ h2 > a {
 
 h2 > a > i {
   font-size: 22px;
+}
+
+h2 > a:hover {
+  color: black;
 }
 
 .container {
@@ -70,7 +78,6 @@ nav {
 /* MAIN ARTICLES */
 
 .main-articles {
-  height: 547px;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   grid-gap: 8px;
@@ -113,17 +120,16 @@ h5 {
 
 .latest-new {
   width: 90vw;
-  margin: 0 auto;
+  margin: 20px auto 0 auto;
   display: grid;
   grid-template-rows: 30px repeat(8, 1fr);
   grid-gap: 10px;
-  height: 879px;
-  padding: 40px 20px;
-  margin: 0 0 28px 0;
+  padding: 20px 0;
 }
 
 .latest-news > h2 {
-  grid-column: 1/-1;
+  grid-column: 1/3;
+  grid-row: 2/2;
 }
 
 .latest-news {
@@ -131,7 +137,6 @@ h5 {
   grid-template-rows: 3.5fr 0.5fr 0.5fr;
   grid-template-columns: 75px 1fr;
   column-gap: 10px;
-  margin: 0 2vh 0 3vh;
 }
 
 .latest-news-imgcontainer {
@@ -160,7 +165,7 @@ h5 {
 /* LATEST FUNDING */
 
 .latest-funding {
-  padding: 40px 20px;
+  padding: 20px 20px;
   width: 90vw;
   margin: 0 auto;
 }
@@ -175,7 +180,6 @@ h5 {
   padding: 10px 0;
 }
 
-.latest-funding-header > h2 > a:hover,
 .latest-funding-header > h4 > a:hover {
   color: black;
 } 
@@ -248,6 +252,49 @@ h5 {
   margin-right: 5px;
 }
 
+/* HARD FORK */
+
+.hard-fork {
+  width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 20px;
+}
+
+.hard-fork-main {
+  background: url(../img/hard-fork-main.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  width: 100%;
+  height: 50vw;
+  color: white;
+  display: flex;
+  align-items: flex-end;
+}
+
+.hard-fork-text {
+  margin: 10px;
+}
+
+.hard-fork-text > h5{
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.hard-fork-text > a > h3 {
+  font-size: 20px;
+  line-height: 1.1;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.hard-fork-text > span {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
 /* LATEST DEALS */
 
 .deals {
@@ -255,7 +302,7 @@ h5 {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  padding: 80px 20px;
+  padding: 40px 20px;
 }
 
 .deals h2 {
