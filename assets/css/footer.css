@@ -1,13 +1,15 @@
 /* LATEST FUNDING */
 
-.latest-funding1 {
+.latest-funding1,
+.latest-funding2,
+.latest-funding3 {
   width: 80vw;
   display: grid;
   grid-template-rows: 38px 57px 170px;
   margin: 0 auto;
 }
 
-.latest-funding1 img {
+.latest-funding img {
   width: 60px;
   height: 60px;
   position: absolute;
