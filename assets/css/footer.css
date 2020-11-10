@@ -72,7 +72,21 @@
 .deals {
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 80px 20px;
+}
+
+.deals h2 {
+    padding: 8px 8px 15px 8px;
+}
+
+.deals > h2 > a {
+    font-size: 28px;
+    color: #f42;
+    font-weight: 700;
+}
+
+.deals > h2 > a > i {
+    font-size: 20px;
 }
 
 .deal-text > h5 > span {
@@ -82,9 +96,20 @@
 
 .deals > h2 > a > span {
   float: right;
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: 10px;
+  white-space: nowrap;
 }
 
-.deal1 {
+.deal1,
+.deal2,
+.deal3,
+.deal4,
+.deal5,
+.deal6,
+.deal7,
+.deal8 {
   display: grid;
   grid-template-columns: 75px 1fr;
   column-gap: 15px;
