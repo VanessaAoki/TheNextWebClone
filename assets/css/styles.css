@@ -68,6 +68,10 @@ nav {
   color: #f42;
 }
 
+.fa-search {
+  color: rgb(138, 137, 137);
+}
+
 .left-side {
   height: 48px;
   width: 106px;
@@ -83,12 +87,14 @@ nav {
   height: 26px;
 }
 
-.top-center {
+.top-center,
+.top-links {
   display: none;
 }
 
 .right-side > a {
   padding: 16px;
+  border-left: 1px solid rgba(230, 230, 230, 0.89);
 }
 
 .banner {
