@@ -448,8 +448,8 @@ nav {
 
 .deals > h2 > a > span {
   float: right;
-  font-size: 15px;
-  font-weight: 400;
+  font-size: 16px;
+  font-weight: 700;
   margin-top: 10px;
   white-space: nowrap;
 }
@@ -479,8 +479,14 @@ nav {
 }
 
 .deal-text > h5 {
-  font-size: 12px;
+  font-size: 16px;
   padding-top: 5px;
+  font-weight: 700;
+}
+.deal-text > h4 {
+  font-size: 16px;
+  padding-top: 5px;
+  line-height: 1.3;
 }
 
 .deal-text del {
@@ -937,4 +943,6 @@ footer {
     font-size: 56px;
     line-height: 1;
   }
+.deal-text > h4 {
+  font-weight: 700;
 }
