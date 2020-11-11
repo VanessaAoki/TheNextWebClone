@@ -77,7 +77,6 @@ nav {
   background-color: white;
   width: 100%;
   z-index: 999;
-  top: 0;
 }
 
 .right-side {
@@ -147,7 +146,7 @@ nav {
 .main-article3 {
   display: grid;
   grid-template-rows: auto auto;
-  background: url(/assets/img/main-article.jpg);
+  background: url(../img/main-article.jpg);
   background-size: cover;
   margin: 0 1vh;
   box-shadow: inset 70px 70px 70px 70px rgba(0, 0, 0, 0.7);
@@ -656,6 +655,58 @@ footer {
     grid-column: 1/-1;
   }
 
+  .latest-news {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+  }
+
+  .latest-news .one,
+  .latest-news .two,
+  .latest-news .three,
+  .latest-news .four,
+  .latest-news .five,
+  .latest-news .six,
+  .latest-news .seven,
+  .latest-news .eight {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 8px;
+  }
+
+  .latest-news-imgcontainer {
+    width: 100%;
+    height: 100%;
+    grid-row: 1/ 2;
+    grid-column: 1/-1;
+  }
+
+  .latest-news-imgcontainer img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+  }
+
+  .latest-news > h2 {
+    grid-column: 1/3;
+    grid-row: 1/1;
+  }
+
+  .latest-news > h4 {
+    grid-column: 1/1;
+    grid-row: 3/3;
+    font-weight: bolder;
+    font-size: 14px;
+  }
+
+  .latest-news > span {
+    grid-column: 1/1;
+    grid-row: 4/4;
+    font-size: 12px;
+    color: #aaa;
+  }
+
   /* LATEST FUNDING */
 
   .latest-funding {
@@ -790,58 +841,6 @@ footer {
   .latest-new {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 60px auto;
-  }
-
-  .latest-news {
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: auto;
-  }
-
-  .latest-news .one,
-  .latest-news .two,
-  .latest-news .three,
-  .latest-news .four,
-  .latest-news .five,
-  .latest-news .six,
-  .latest-news .seven,
-  .latest-news .eight {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    padding: 8px;
-  }
-
-  .latest-news-imgcontainer {
-    width: 100%;
-    height: 100%;
-    grid-row: 1/ 2;
-    grid-column: 1/-1;
-  }
-
-  .latest-news-imgcontainer img {
-    object-fit: contain;
-    width: 100%;
-    height: 100%;
-  }
-
-  .latest-news > h2 {
-    grid-column: 1/3;
-    grid-row: 1/1;
-  }
-
-  .latest-news > h4 {
-    grid-column: 1/1;
-    grid-row: 3/3;
-    font-weight: bolder;
-    font-size: 14px;
-  }
-
-  .latest-news > span {
-    grid-column: 1/1;
-    grid-row: 4/4;
-    font-size: 12px;
-    color: #aaa;
   }
 
   .latest-funding {
