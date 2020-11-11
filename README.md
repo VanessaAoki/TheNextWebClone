@@ -2,7 +2,7 @@
 
 This is the HTML/CSS project #6, from the Microverse's main curriculum and aims to build a clone of the thenextweb.com's homepage using HTML and CSS. 
 
-![screenshot](./assets/imgs/screenshot.png)
+![screenshot](./assets/img/screenshot.png)
 
 ## Built With
 
