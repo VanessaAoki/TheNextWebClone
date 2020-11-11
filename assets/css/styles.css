@@ -484,6 +484,7 @@ nav {
   padding-top: 5px;
   font-weight: 700;
 }
+
 .deal-text > h4 {
   font-size: 16px;
   padding-top: 5px;
@@ -820,7 +821,7 @@ footer {
     overflow: hidden;
   }
 
-  .deal-imgconteiner { 
+  .deal-imgconteiner {
     position: relative;
     overflow: hidden;
     width: 100%;
@@ -833,7 +834,7 @@ footer {
     width: 100%;
     height: 100%;
   }
-  
+
   .deal-imgconteiner > span {
     display: block;
     background-color: #fc0;
@@ -860,12 +861,11 @@ footer {
 /* MEDIA QUERY LAPTOP */
 
 @media only screen and (min-width: 1024px) {
-
   .top-links-left {
     padding-left: 10px;
   }
 
-  .top-center-laptop {display: flex}
+  .top-center-laptop { display: flex; }
 
   .left-side {
     display: none;
@@ -937,6 +937,10 @@ footer {
     margin: 0 8px;
   }
 
+  .deal-text > h4 {
+    font-weight: 700;
+  }
+
   .sga > h4:not(:last-child) {
     border-left: 1.5px solid #f42;
     padding-left: 12px;
@@ -963,15 +967,11 @@ footer {
     line-height: 1;
   }
 
-.deal-text > h4 {
-  font-weight: 700;
-}
-
-.deal-imgconteiner > span {
-  
-  padding: 80px;
-  padding-bottom: 5px;
-  font-size: 16px;
-  margin-top: -30px;
-  margin-right: -85px;
+  .deal-imgconteiner > span {
+    padding: 80px;
+    padding-bottom: 5px;
+    font-size: 16px;
+    margin-top: -30px;
+    margin-right: -85px;
+  }
 }
