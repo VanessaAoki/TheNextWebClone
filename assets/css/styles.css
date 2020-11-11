@@ -69,15 +69,26 @@ nav {
 }
 
 .left-side {
-  width: fit-content;
+  height: 48px;
+  width: 106px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-side img {
+  filter: invert(100%);
+  width: auto;
+  height: 26px;
+}
+
+.top-center {
+  display: none;
 }
 
 .right-side > a {
   padding: 16px;
-}
-
-.left-side > a > img {
-  height: 48px;
 }
 
 .banner {
