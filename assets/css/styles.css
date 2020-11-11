@@ -565,7 +565,7 @@ footer {
 
 @media only screen and (min-width: 768px) {
   .container {
-    padding-top: 100px;
+    padding-top: 0;
   }
 
   /* HEADER */
@@ -591,6 +591,10 @@ footer {
   .top-links-left a,
   .top-links-right a {
     margin-left: 15px;
+  }
+
+  .top-links-left > li:first-child {
+    color: rgba(255, 255, 255, 0.644);
   }
 
   .top-links-left {
@@ -623,18 +627,13 @@ footer {
     display: inline-flex;
   }
 
+  nav,
+  header,
   .banner {
     position: sticky;
     top: 0;
     width: 100%;
   }
-
-  nav {
-    position: sticky;
-    top: 0;
-    width: 100%;
-  }
-
 
   /* MAIN ARTICLES */
 
@@ -836,6 +835,13 @@ footer {
 /* MEDIA QUERY LAPTOP */
 
 @media only screen and (min-width: 1024px) {
+
+  .top-links-left {
+    padding-left: 10px;
+  }
+
+  .top-center-laptop {display: flex}
+
   .left-side {
     display: none;
   }
