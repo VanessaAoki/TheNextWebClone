@@ -576,7 +576,42 @@ footer {
 
 @media only screen and (min-width:768px) {
 
+  .container {
+    padding-top: 0;
+  }
+
   /* HEADER */
+
+  .top-links {
+    display: inline-flex;
+    background-color: #131313;
+    width: calc(100vw - 135px);
+    height: 32px;
+    font-size: 13px;
+    justify-content: space-between;
+    padding: 0 25px 0 110px;
+  }
+
+  .top-links ul {
+    display: inline-flex;
+    line-height: 32px;
+    color: #555;
+  }
+
+  .top-links li {
+    margin-left: 15px;
+  }
+
+  .top-links-left li:first-child {
+    color: white;
+  }
+
+  header,
+  nav,
+  .banner {
+    position: sticky;
+    top: 0;
+  }
 
   .right-side > a:last-child {
     display: none;
